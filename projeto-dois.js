@@ -50,6 +50,3 @@ switch (true) {
 }
 
 alert(`O Herói de nome ${nome} está no nível de ${nivel}`);
-
-
-alert(`O Herói de nome ${nome} está no nível de ${nivel}`);
