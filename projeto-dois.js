@@ -1,5 +1,16 @@
-let nome = prompt("Qual é o seu nome de herói?");
+let nome = ;
 let quantiaDeXp;
+
+while (true) {
+    nome = prompt("Qual é o seu nome de herói?");
+
+    if (/^[A-Za-z]+$/.test(nome)) {
+        break;
+    } else {
+        alert("Por favor, insira um nome válido contendo apenas letras.");
+    }
+}
+
 
 while (true) {
     quantiaDeXp = Number(prompt("Qual é o seu nível de XP?"));
