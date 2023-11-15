@@ -1,5 +1,5 @@
-let nome = ;
-let quantiaDeXp = ;
+let nome;
+let quantiaDeXp;
 
 while (true) {
     nome = prompt("Qual é o seu nome de herói?");
@@ -11,17 +11,15 @@ while (true) {
     }
 }
 
-
 while (true) {
     quantiaDeXp = Number(prompt("Qual é o seu nível de XP?"));
 
-    if (!isNaN(quantiaDeXp)) {
+    if (!isNaN(quantiaDeXp) && Number.isInteger(quantiaDeXp) && quantiaDeXp > 0) {
         break;
     } else {
-        alert("Por favor, insira um valor numérico válido para a experiência.");
+        alert("Por favor, insira um valor numérico inteiro e positivo válido para a experiência.");
     }
 }
-
 let nivel;
 
 switch (true) {
