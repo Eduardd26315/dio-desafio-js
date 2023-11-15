@@ -1,5 +1,5 @@
 let nome = ;
-let quantiaDeXp;
+let quantiaDeXp = ;
 
 while (true) {
     nome = prompt("Qual é o seu nome de herói?");
