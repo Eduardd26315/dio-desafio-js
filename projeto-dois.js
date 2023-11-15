@@ -37,6 +37,10 @@ switch (true) {
         break;
     default:
         nivel = "Radiante";
+        break;
 }
+
+alert(`O Herói de nome ${nome} está no nível de ${nivel}`);
+
 
 alert(`O Herói de nome ${nome} está no nível de ${nivel}`);

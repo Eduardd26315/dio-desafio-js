@@ -23,32 +23,24 @@ while (true) {
 
 let nivel;
 
-switch (true) {
-    case quantiaDeXp < 1000:
-        nivel = "Ferro";
-        break;
-    case quantiaDeXp <= 2000:
-        nivel = "Bronze";
-        break;
-    case quantiaDeXp <= 5000:
-        nivel = "Prata";
-        break;
-    case quantiaDeXp <= 7000:
-        nivel = "Ouro";
-        break;
-    case quantiaDeXp <= 8000:
-        nivel = "Platina";
-        break;
-    case quantiaDeXp <= 9000:
-        nivel = "Ascendente";
-        break;
-    case quantiaDeXp <= 10000:
-        nivel = "Imortal";
-        break;
-    default:
-        nivel = "Radiante";
+if (quantiaDeXp < 1000) {
+    nivel = "Ferro";
+} else if (quantiaDeXp >= 1001 && quantiaDeXp <= 2000) {
+    nivel = "Bronze";
+} else if (quantiaDeXp >= 2001 && quantiaDeXp <= 5000) {
+    nivel = "Prata";
+} else if (quantiaDeXp <= 6001 && quantiaDeXp <= 7000) {
+    nivel = "Ouro";
+} else if (quantiaDeXp >= 7001 && quantiaDeXp <= 8000) {
+    nivel = "Platina";
+} else if (quantiaDeXp >= 8001 && quantiaDeXp <= 9000) {
+    nivel = "Ascendente";
+} else if (quantiaDeXp >= 9001 && quantiaDeXp <= 10000) {
+    nivel = "Imortal";
+} else {
+    
+    nivel = "Radiante";
 }
-
 alert(`O Herói de nome ${nome} está no nível de ${nivel}`);
 
 
